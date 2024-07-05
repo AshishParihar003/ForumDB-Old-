@@ -1,0 +1,360 @@
+@import "https://fonts.googleapis.com/css?family=Audiowide";
+
+.brand-logo{
+    max-width:160px;
+    max-height:50px;
+}
+
+.h1-full{
+    height: 90vh;
+    background-color: #fff3cd;
+}
+
+.nav-link{
+    font-family: "Audiowide";
+}
+
+body{
+    background-color: white;
+}
+
+.im{
+    max-width:160px;
+    max-height:50px;
+}
+
+.marquee-container {
+overflow: hidden;
+}
+
+.marquee-content {
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes marquee {
+0% {
+    transform: translateX(100%);
+}
+
+100% {
+    transform: translateX(-50%);
+}
+}
+
+.navbar-line {
+    border-top: 1px solid #000; /* Change color as desired */
+}
+
+.navbar-wrapper {
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+}
+
+/* Importtant updates Section */
+
+.rounded-div {
+  width: 200px;
+  height: 40px;
+  background-color: #f0f0f0;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.centered-text {
+  text-align: center;
+}
+
+
+.blank-div {
+  width: 200px;
+  height: 20px;
+  background-color: #ffffff;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+}
+.min {
+  width: 100%;
+  height: 10px;
+  background-color: #ffffff;
+}
+
+.header{
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+.no-pad-mar{
+    padding: 0;
+    margin: 0;
+}
+
+/* Highlights */
+
+.service-item {
+    background: var(--light);
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    background: var(--primary);
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
+
+.profileimage{
+    height: 75%;
+    width: 80%;
+    margin-block-start: inherit;
+    padding-left: 1%;
+    border-top-right-radius: 12%;
+    border-end-end-radius: 12%;
+}
+
+
+.carousel-container {
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .carousel-item {
+    transition: transform 0.5s ease; 
+  }
+  
+  
+  .fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  iframe {
+    width: calc(100% - 40px);  
+   
+    margin: 20px;              
+    border: none;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 50px; 
+  align-content: center;
+
+}
+
+.image-item img {
+  width: 70%;
+  height: 55%;
+  display: block;
+ margin: 3%;
+  margin-left: auto;
+  margin-right: auto; 
+  border-radius: 90%;
+}
+.reviews-container {
+  display: flex;
+  justify-content: space-around; 
+  
+ 
+}
+
+.certificate-img{
+  width: 55%;
+  margin-top: 8%;
+  margin-left: 40%;
+ 
+}
+
+.student-review {
+  display: flex;
+  border: 4px solid #ccc;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+.student-image {
+  width: auto;
+    height: 11rem;
+    border-radius: 60px;
+    margin-right: 10px;
+ 
+    object-fit: cover;
+}
+
+
+
+.circle-background {
+  position: relative;
+  display: inline-block;
+}
+
+.circle-background::before {
+  content: "";
+  position: absolute;
+  top: 52%;
+  left: -8%;
+  width: 200%; /* Adjust size as needed */
+  height: 115%; /* Adjust size as needed */
+  background-color: rgba(254, 226, 207, 255); /* Transparent blue */
+  border-radius: 100px;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure circle is behind the image */
+}
+.certificate-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.certificate-wrapper::before {
+  content: "";
+  position: absolute;
+   top: 55%;
+  right: 30px;
+  width: 900px; /* Adjust size as needed */
+  height: 650px; /* Adjust size as needed */
+  background-color: rgba(62, 206, 219, 0.979); /* Transparent blue */
+  border-radius: 20%;
+  transform: translate(50%, -50%); /* Position to the right */
+  z-index: -1; /* Ensure circle is behind the image */
+}
+
+
+
+.rating {
+  color: gold;
+  font-size: 18px;
+}
+.page-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  margin: 0 auto;
+  width: 80%; 
+}
+
+.icon {
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.icon {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideInUp 0.5s forwards; 
+  animation-delay: calc(var(--animation-order) * 0.1s); 
+}
+
+@keyframes slideInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.custom-border {
+  border-color: orange;
+}
+.image-item{
+  border-radius: 10%;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  padding: 10rem;
+
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+  
+  
+ 
+}
+.social-media img {
+  width: 34px;
+  height: 34px;
+  margin-left: 15px;}
+
+
+.text-grid{
+  
+ text-align: center; 
+  font-size: medium;
+  font-weight: bold;
+  
+}
+.custom-border {
+  border-color: rgb(0, 0, 0) !important;
+  border-width: 100px;
+}
+
+.custom-explore-button {
+  background-color: white !important;
+  color:#af2b2b;
+  border-color: #c85631;border-style: solid;
+}
+
+.custom-pay-button {
+  background-color: rgb(255, 85, 0) !important;
+  color: white;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+.sum-img {
+  height: 75%;
+  width: 83%;
+  margin-block-start: inherit;
+  padding-left: 3%;
+  border-top-right-radius: 12%;
+  border-end-end-radius: 12%;
+}
